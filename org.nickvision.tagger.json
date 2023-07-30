@@ -92,7 +92,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.8.0-beta1"
+                    "tag": "2023.8.0-rc1"
                 },
                 "cake-sources.json",
                 "nuget-sources.json"
