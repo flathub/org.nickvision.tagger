@@ -17,7 +17,8 @@
         "--socket=wayland",
         "--device=dri",
         "--share=ipc",
-        "--share=network"
+        "--share=network",
+        "--system-talk-name=org.freedesktop.NetworkManager"
     ],
     "cleanup":[
         "/include",
@@ -90,7 +91,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.8.0"
+                    "tag": "2023.8.1"
                 },
                 "nuget-sources.json"
             ]
