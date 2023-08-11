@@ -91,7 +91,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.8.1"
+                    "tag": "2023.8.2"
                 },
                 "nuget-sources.json"
             ]
