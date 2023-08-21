@@ -18,7 +18,9 @@
         "--device=dri",
         "--share=ipc",
         "--share=network",
-        "--system-talk-name=org.freedesktop.NetworkManager"
+        "--system-talk-name=org.freedesktop.NetworkManager",
+        "--filesystem=xdg-download",
+        "--filesystem=xdg-music"
     ],
     "cleanup":[
         "/include",
@@ -75,8 +77,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                    "tag": "v0.6.0",
-                    "commit": "9adcab2d225fd6435edc85c72a0b67e33880e00b"
+                    "tag": "v0.10.0",
+                    "commit": "2a39a16391122af2f3d812e478c1c1398c98b972"
                 }
             ]
         },
@@ -91,7 +93,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.8.2-rc1"
+                    "tag": "2023.8.3-beta1"
                 },
                 "nuget-sources.json"
             ]
