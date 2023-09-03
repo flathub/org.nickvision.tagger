@@ -120,6 +120,13 @@
   },
   {
     "type": "file",
+    "url": "https://api.nuget.org/v3-flatcontainer/htmlagilitypack/1.11.52/htmlagilitypack.1.11.52.nupkg",
+    "sha512": "ed6136ab2a443b3a3ac65731122d650296c9bed0f3f8133fb7f456f1a9db0adde247afd25268a19c43b8e107fe5ea07ac3ca8d7cd47743069cae3121e85292e4",
+    "dest": "nuget-sources",
+    "dest-filename": "htmlagilitypack.1.11.52.nupkg"
+  },
+  {
+    "type": "file",
     "url": "https://api.nuget.org/v3-flatcontainer/markdig/0.31.0/markdig.0.31.0.nupkg",
     "sha512": "55f37379d3e7f972ccd1eb354e1c8868b915d88aef4fbb903bc781ffe200236672270ff3314c9e79f14a94fae1e188933b22e6effc5eb598a279259969fc49c6",
     "dest": "nuget-sources",
@@ -526,6 +533,13 @@
   },
   {
     "type": "file",
+    "url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/7.0.0/system.text.encoding.codepages.7.0.0.nupkg",
+    "sha512": "485abfaeb1f9dac307249b2d84375a7d63c4bb175109107ba59e3ab6b476c52a62d677ca3c06f0e9a999afd5bf2f21d396a4b4d534563bb9da8d1b8ed6fc458a",
+    "dest": "nuget-sources",
+    "dest-filename": "system.text.encoding.codepages.7.0.0.nupkg"
+  },
+  {
+    "type": "file",
     "url": "https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg",
     "sha512": "0f26afeeaa709ea1f05ef87058408dd9df640c869d7398b2c9c270268ddf21a9208cd7d2bfa1f7fbd8a5ceab735dd22d470a3689627c9c4fadc0ea5fe76237fa",
     "dest": "nuget-sources",
@@ -575,10 +589,10 @@
   },
   {
     "type": "file",
-    "url": "https://api.nuget.org/v3-flatcontainer/z440.atl.core/5.3.0/z440.atl.core.5.3.0.nupkg",
-    "sha512": "26ae3d58265742e1328674ca139acbc9d24de1467840d66366387df6073e17e05e18e7d9246404401cc4bda4f097246a335a9c0407cbfd7c6667262575bd8cb1",
+    "url": "https://api.nuget.org/v3-flatcontainer/z440.atl.core/5.6.0/z440.atl.core.5.6.0.nupkg",
+    "sha512": "fd0d17ddb98a6623e0308b23dbb2a03f4155b4552ffba3e17cb56731b27978dee740e885648a020c6d4c0ddb042af57e5f36837ac503fa6950fce883a3f13f18",
     "dest": "nuget-sources",
-    "dest-filename": "z440.atl.core.5.3.0.nupkg"
+    "dest-filename": "z440.atl.core.5.6.0.nupkg"
   },
   {
     "type": "file",
