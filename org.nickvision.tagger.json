@@ -18,7 +18,8 @@
         "--device=dri",
         "--share=ipc",
         "--share=network",
-        "--system-talk-name=org.freedesktop.NetworkManager"
+        "--system-talk-name=org.freedesktop.NetworkManager",
+        "--filesystem=home"
     ],
     "cleanup":[
         "/include",
@@ -69,6 +70,21 @@
             ]
         },
         {
+            "name": "webp-pixbuf-loader",
+            "buildsystem": "meson",
+            "config-opts": [ "-Dgdk_pixbuf_moduledir=/app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/aruiz/webp-pixbuf-loader",
+                    "commit": "a35014104a226265e44fe30fcdb4df9305af3466"
+                }
+            ],
+            "post-install": [
+                "gdk-pixbuf-query-loaders /app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders/*.so > /app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders/loaders.cache"
+            ]
+        },
+        {
             "name": "blueprint-compiler",
             "buildsystem": "meson",
             "cleanup": [
@@ -78,8 +94,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                    "tag": "v0.6.0",
-                    "commit": "9adcab2d225fd6435edc85c72a0b67e33880e00b"
+                    "tag": "v0.10.0",
+                    "commit": "2a39a16391122af2f3d812e478c1c1398c98b972"
                 }
             ]
         },
@@ -94,7 +110,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.8.3"
+                    "tag": "2023.9.0"
                 },
                 "nuget-sources.json"
             ]
