@@ -7,9 +7,9 @@
         "org.freedesktop.Sdk.Extension.dotnet7"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/dotnet7/bin",
-        "append-ld-library-path": "/usr/lib/sdk/dotnet7/lib",
-        "append-pkg-config-path": "/usr/lib/sdk/dotnet7/lib/pkgconfig"
+        "append-path": "/usr/lib/sdk/dotnet8/bin",
+        "append-ld-library-path": "/usr/lib/sdk/dotnet8/lib",
+        "append-pkg-config-path": "/usr/lib/sdk/dotnet8/lib/pkgconfig"
     },
     "command" : "org.nickvision.tagger",
     "finish-args":[
@@ -28,7 +28,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "22.08",
+            "version": "23.08",
             "add-ld-path": ".",
             "autodelete": false
         }
@@ -93,8 +93,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                    "tag": "v0.10.0",
-                    "commit": "2a39a16391122af2f3d812e478c1c1398c98b972"
+                    "tag": "v0.10.0"
                 }
             ]
         },
@@ -109,7 +108,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.11.2"
+                    "tag": "2023.11.3"
                 },
                 "nuget-sources.json"
             ]
