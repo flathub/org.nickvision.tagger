@@ -1,10 +1,10 @@
 {
     "app-id" : "org.nickvision.tagger",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.dotnet7"
+        "org.freedesktop.Sdk.Extension.dotnet8"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/dotnet8/bin",
@@ -108,7 +108,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/NickvisionApps/Tagger.git",
-                    "tag": "2023.11.3"
+                    "tag": "2024.6.0"
                 },
                 "nuget-sources.json"
             ]
