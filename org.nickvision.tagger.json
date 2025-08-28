@@ -1,8 +1,8 @@
 {
-    "app-id" : "org.nickvision.tagger",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
-    "sdk" : "org.gnome.Sdk",
+    "app-id": "org.nickvision.tagger",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "46",
+    "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.dotnet8"
     ],
@@ -11,8 +11,8 @@
         "append-ld-library-path": "/usr/lib/sdk/dotnet8/lib",
         "append-pkg-config-path": "/usr/lib/sdk/dotnet8/lib/pkgconfig"
     },
-    "command" : "org.nickvision.tagger",
-    "finish-args":[
+    "command": "org.nickvision.tagger",
+    "finish-args": [
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
@@ -20,7 +20,7 @@
         "--share=network",
         "--filesystem=home"
     ],
-    "cleanup":[
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "*.a"
@@ -36,7 +36,7 @@
     "cleanup-commands": [
         "mkdir -p /app/lib/ffmpeg"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "chromaprint",
             "buildsystem": "cmake-ninja",
@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.5.1/chromaprint-1.5.1.tar.gz",
-                    "sha256": "a1aad8fa3b8b18b78d3755b3767faff9abb67242e01b478ec9a64e190f335e1c",
+                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.0/chromaprint-1.6.0.tar.gz",
+                    "sha256": "9d33482e56a1389a37a0d6742c376139fa43e3b8a63d29003222b93db2cb40da",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 286,
@@ -71,7 +71,9 @@
         {
             "name": "webp-pixbuf-loader",
             "buildsystem": "meson",
-            "config-opts": [ "-Dgdk_pixbuf_moduledir=/app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders" ],
+            "config-opts": [
+                "-Dgdk_pixbuf_moduledir=/app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders"
+            ],
             "sources": [
                 {
                     "type": "git",
