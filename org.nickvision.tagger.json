@@ -1,7 +1,7 @@
 {
     "app-id" : "org.nickvision.tagger",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.dotnet8"
@@ -24,17 +24,6 @@
         "/include",
         "/lib/pkgconfig",
         "*.a"
-    ],
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "directory": "lib/ffmpeg",
-            "version": "23.08",
-            "add-ld-path": ".",
-            "autodelete": false
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p /app/lib/ffmpeg"
     ],
     "modules" : [
         {
@@ -66,35 +55,6 @@
             "cleanup": [
                 "/include",
                 "/lib/pkgconfig"
-            ]
-        },
-        {
-            "name": "webp-pixbuf-loader",
-            "buildsystem": "meson",
-            "config-opts": [ "-Dgdk_pixbuf_moduledir=/app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders" ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/aruiz/webp-pixbuf-loader",
-                    "commit": "a35014104a226265e44fe30fcdb4df9305af3466"
-                }
-            ],
-            "post-install": [
-                "gdk-pixbuf-query-loaders /app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders/*.so > /app/lib/org.nickvision.tagger/gdk-pixbuf-2.0/2.10.0/loaders/loaders.cache"
-            ]
-        },
-        {
-            "name": "blueprint-compiler",
-            "buildsystem": "meson",
-            "cleanup": [
-                "*"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                    "tag": "v0.10.0"
-                }
             ]
         },
         {
