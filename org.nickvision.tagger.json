@@ -1,7 +1,7 @@
 {
     "app-id": "org.nickvision.tagger",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.dotnet8"
@@ -28,7 +28,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "23.08",
+            "version": "25.08",
             "add-ld-path": ".",
             "autodelete": false
         }
@@ -57,10 +57,6 @@
                         "stable-only": true,
                         "url-template": "https://github.com/acoustid/chromaprint/releases/download/v$version/chromaprint-$version.tar.gz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "chromaprint_ffmpeg5.patch"
                 }
             ],
             "cleanup": [
